@@ -9,12 +9,12 @@
 <body>
     <h1 class="myHeader">My To Do List</h1>
     <br /><br /><br />
-    <div class="myBox">
+    <div id = "listHolder" class="myBox">
         <ul id="toDoList" class="myList"></ul>
     </div>
     <br /><br /><br />
     <div class="mySmallerBox">
-        <input type="text" id="newTask"><br /><br />
+        <input type="text" id="newTask" size="50"><br /><br />
         <input type="button" value="Add new Task" onclick="addNewTask()" class=button><br /><br />
         <input type="button" value="Remove all tasks" onclick="clearALL()" class=button> <br /><br />
         <input type="button" value="Remove crossed tasks" onclick="removeCrossedTasks()" class=button><br /><br />

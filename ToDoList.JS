@@ -46,6 +46,10 @@ function addNewTask() {
         counter++
         li.classList.add("myRegLine")
         toDoList.appendChild(li)
+        if (newTask.value.length >= 65) {
+            var tdlHolder = document.getElementById("listHolder")
+            tdlHolder.style.width="100%"
+        }
         newTask.value = ""
     }
 }
