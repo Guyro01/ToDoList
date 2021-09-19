@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>M.T.D.L TM</title>
+        <link rel="stylesheet" href="ToDoList.CSS">
+        <script src="ToDoList.JS"></script>
+    </head>
+
+    <body>
+    <h1 class="myHeader">My To Do List</h1>
+    <br/><br/><br/>
+    <div class="myBox">
+        <ul id="toDoList"> 
+            
+        </ul>
+    </div>
+    <br/><br/><br/>
+    <div class="myBox">
+        <input type="text" id="newTask"><br/>
+        <input type="button" value="Add new Task" onclick="AddProNode()">
+        <input type="button" value="Remove all tasks" onclick="clearALL()">
+        <input type="button" value="Remove crossed tasks" onclick= "RemoveCrossedTasks()">
+    </div>
+    </body>
+</html>

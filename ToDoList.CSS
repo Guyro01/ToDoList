@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(41, 5, 75);
+}
+
+.myTextBox {
+
+    background-color: darkslateblue;
+    color: coral;
+    font-size: 20;
+    height: 90;
+    width: 270;
+}
+
+.myHeader {
+
+    background-color: coral;
+    color: darkslateblue;
+    height: 100;
+    font-size: 50;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.myBox{
+    background-color: coral;
+    color: darkslateblue;
+    width: 30%;
+}
+ 
+.myListLine{
+   
+    background-color: darkorange;
+}
+
+
