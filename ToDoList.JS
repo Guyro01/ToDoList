@@ -2,44 +2,43 @@
 var counter = 0
 
 
-function CrossItem() {
-    for (var i = 0; i <= counter; i++)
-    {
+function CrossCheckedItems() {
+    for (var i = 0; i <= counter; i++) {
         var cb = document.getElementById(i + "+" + "CB")
         var listitem = document.getElementById(i)
-        if(cb.checked == true)
-        {
-        listitem.style.color="red"
+        if (cb.checked == true) {
+            listitem.style.color = "red"
         }
         else
-        listitem.style.color="darkslateblue"
+            listitem.style.color = "darkslateblue"
     }
 }
 
-function RemoveTask(taskNum) {
+function CrossItem(cb) {
 
-    var task = document.getElementById(taskNum)
-    task.style.visibility = "hidden"
+    var listLine = cb.parentElement
+    if (cb.checked == true)
+        listLine.style.color = "red"
+    else
+        listLine.style.color = "darkslateblue"
+
 }
+
 
 function RemoveCrossedTasks() {
 
-    for (var i = 0; i <= counter; i++)
-    {
+    for (var i = 0; i < counter; i++) {
         var cb = document.getElementById(i + "+" + "CB")
-        if(cb.checked == true)
-        {
-        var listitem = document.getElementById(i)
-        listitem.style.display="none"
+        if (cb.checked == true) {
+            var listitem = document.getElementById(i)
+            listitem.style.display = "none"
         }
     }
 
-    
-    }
 
+}
 
-
-function AddProNode() {
+function AddNewTask() {
 
     var toDoList = document.getElementById("toDoList")
     var newTask = document.getElementById("newTask")
@@ -47,9 +46,9 @@ function AddProNode() {
     checkbox.type = "checkbox"
     checkbox.value = 1
     checkbox.id = counter + "+" + "CB"
-    checkbox.onclick= function() {
-        CrossItem()
-  }
+    checkbox.onclick = function () {
+        CrossItem(checkbox)
+    }
     let li = document.createElement("li")
     li.appendChild(checkbox)
     li.appendChild(document.createTextNode(newTask.value))
@@ -70,28 +69,4 @@ function clearALL() {
 }
 
 
-function AddNewNode() {
-    var toDoList = document.getElementById("toDoList")
-    var newTask = document.getElementById("newTask")
-    //var checkbox = document.createElement('input')
-    //    checkbox.type = "checkbox"
-    //   checkbox.value = 1
-    //    checkbox.id = counter+"+"+"CB"
-    let li = document.createElement("li")
-    //li.appendChild(checkbox)
-    li.appendChild(document.createTextNode(newTask.value))
-    li.id = counter
-    counter++
-    li.classList.add("myListLine")
-    toDoList.appendChild(li)
-}
 
-function clearALL() {
-    var toDoList = document.getElementById("toDoList")
-    while (toDoList.firstChild) {
-        toDoList.removeChild(toDoList.firstChild);
-    }
-
-
-
-}
