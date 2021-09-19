@@ -1,24 +1,24 @@
 <html>
-    <head>
-        <title>M.T.D.L TM</title>
-        <link rel="stylesheet" href="ToDoList.CSS">
-        <script src="ToDoList.JS"></script>
-    </head>
 
-    <body>
+<head>
+    <title>M.T.D.L TM</title>
+    <link rel="stylesheet" href="ToDoList.CSS">
+    <script src="ToDoList.JS"></script>
+</head>
+
+<body>
     <h1 class="myHeader">My To Do List</h1>
-    <br/><br/><br/>
+    <br /><br /><br />
     <div class="myBox">
-        <ul id="toDoList"> 
-            
-        </ul>
+        <ul id="toDoList" class="myList"></ul>
     </div>
-    <br/><br/><br/>
-    <div class="myBox">
-        <input type="text" id="newTask"><br/>
-        <input type="button" value="Add new Task" onclick="AddNewTask()">
-        <input type="button" value="Remove all tasks" onclick="clearALL()">
-        <input type="button" value="Remove crossed tasks" onclick= "RemoveCrossedTasks()">
+    <br /><br /><br />
+    <div class="mySmallerBox">
+        <input type="text" id="newTask"><br /><br />
+        <input type="button" value="Add new Task" onclick="addNewTask()" class=button><br /><br />
+        <input type="button" value="Remove all tasks" onclick="clearALL()" class=button> <br /><br />
+        <input type="button" value="Remove crossed tasks" onclick="removeCrossedTasks()" class=button><br /><br />
     </div>
-    </body>
+</body>
+
 </html>
