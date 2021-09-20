@@ -3,7 +3,6 @@ body {
 }
 
 .myTextBox {
-
     background-color: darkslateblue;
     color: coral;
     font-size: 20;
@@ -12,7 +11,6 @@ body {
 }
 
 .myHeader {
-
     background-color: coral;
     color: darkslateblue;
     height: 100;
@@ -20,45 +18,51 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.myBox{
+.myBox {
     background-color: coral;
     color: darkslateblue;
     width: 50%;
 }
 
-.mySmallerBox{
+.mySmallerBox {
     background-color: coral;
     color: darkslateblue;
     width: 30%;
 }
- 
-.myCrossedLine
-{
-    font-size:x-large;
+
+.myHiddenBox {
+
+   visibility: hidden;
+
+}
+
+.myCrossedLine {
+    font-size: x-large;
     color: red;
     text-decoration: line-through;
 }
 
-.myRegLine
-{
-    font-size:x-large;
-    color:darkslateblue;
+.myRegLine {
+    font-size: x-large;
+    color: darkslateblue;
     text-decoration: none;
-
 }
+
 .myList {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
 
-  .button {
-    background-color: darkslateblue; 
+.button {
+    background-color: darkslateblue;
     color: coral;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
-  }
-  
+}
 
+.textInput{
+    width: 100%;
+}
