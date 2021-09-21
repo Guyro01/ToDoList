@@ -3,49 +3,51 @@ body {
 }
 
 .myTextBox {
-    background-color: darkslateblue;
-    color: coral;
+    background-color: black;
+    color: white;
     font-size: 20;
     height: 90;
     width: 270;
 }
 
 .myHeader {
-    background-color: coral;
-    color: darkslateblue;
+    background-color: white;
+    color: black;
     height: 100;
     font-size: 50;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .myBox {
-    background-color: coral;
-    color: darkslateblue;
+    background-color: white;
+    color: black;
     width: 50%;
 }
 
 .mySmallerBox {
-    background-color: coral;
-    color: darkslateblue;
+    background-color: white;
+    color: black;
     width: 30%;
 }
 
 .myHiddenBox {
-
-   visibility: hidden;
-
+    visibility: hidden;
 }
 
 .myCrossedLine {
     font-size: x-large;
     color: red;
     text-decoration: line-through;
+    width: inherit;
+    height: inherit;
 }
 
 .myRegLine {
     font-size: x-large;
     color: darkslateblue;
     text-decoration: none;
+    width: inherit;
+    height: inherit;
 }
 
 .myList {
@@ -54,15 +56,30 @@ body {
     padding: 0;
 }
 
-.button {
-    background-color: darkslateblue;
-    color: coral;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
+.textInput {
+    width: 100%;
 }
 
-.textInput{
-    width: 100%;
+.button {
+    border-color: black;
+    background-color: #000000;
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    width: inherit;
+    height: inherit;
+    /*transition: all 0.2s;*/
+}
+
+.button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
 }
