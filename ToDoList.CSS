@@ -83,3 +83,10 @@ body {
     color: #000000;
     background-color: #FFFFFF;
 }
+
+.h1 {
+    width: inherit;
+    height: inherit;
+
+
+}
